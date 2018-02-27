@@ -1,3 +1,54 @@
+(function($) {
+  "use strict"; // Start of use strict
+
+  // Smooth scrolling using jQuery easing
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 54)
+        }, 1000, "easeInOutExpo");
+        return false;
+      }
+    }
+  });
+
+  // Closes responsive menu when a scroll trigger link is clicked
+  $('.js-scroll-trigger').click(function() {
+    $('.navbar-collapse').collapse('hide');
+  });
+
+  // Activate scrollspy to add active class to navbar items on scroll
+  $('body').scrollspy({
+    target: '#mainNav',
+    offset: 56
+  });
+
+  // Collapse Navbar
+  var navbarCollapse = function() {
+    if ($("#mainNav").offset().top > 100) {
+      $("#mainNav").addClass("navbar-shrink");
+    } else {
+      $("#mainNav").removeClass("navbar-shrink");
+    }
+  };
+  // Collapse now if page is not at top
+  navbarCollapse();
+  // Collapse the navbar when page is scrolled
+  $(window).scroll(navbarCollapse);
+
+  // Hide navbar when modals trigger
+  $('.portfolio-modal').on('show.bs.modal', function(e) {
+    $(".navbar").addClass("d-none");
+  })
+  $('.portfolio-modal').on('hidden.bs.modal', function(e) {
+    $(".navbar").removeClass("d-none");
+  })
+
+})(jQuery); // End of use strict
+
 AOS.init({
   duration: 1500,
 })
@@ -27,43 +78,3 @@ $('#photos').append(allImages);
 $( "img" ).on( "mouseover", function() {
       $( this ).css( "filter", "none" );
 });
-
-// // init ScrollMagic Controller
-// var controller = new ScrollMagic.Controller();
-
-// var envStartHeight=$('#memo1').offset().top;
-// var memoStartHeight=$('#blue0').offset().top;
-// // Scene Handler
-
-// // Scene2 Handler
-// console.log(memoStartHeight-envStartHeight);
-// var scene2 = new ScrollMagic.Scene({
-//   triggerElement: "#pinned-trigger2", // point of execution
-//   triggerHook:"onCenter",
-//   duration: memoStartHeight-envStartHeight +25// pin the element for a total of 400px
-
-// })
-// .setPin("#pinned-element2") // the element we want to pin
-// .addTo(controller);
-
-
-// var scene3 = new ScrollMagic.Scene({
-//   triggerElement: "#button_open_envelope0", // point of execution
-//   triggerHook:.8
-
-// })
-// .setClassToggle(".top0", "open0")
-// // .setPin("#pinned-element2") // the element we want to pin
-// .addTo(controller);
-
-// var scene3 = new ScrollMagic.Scene({
-//   triggerElement: "#top0", // point of execution
-//   triggerHook: 0.2
-// })
-// .setClassToggle(".top0", "close0")
-// // .setPin("#pinned-element2") // the element we want to pin
-// .addTo(controller);
-
-
-// // var tl = new TimelineMax();
-// // tl.set($('#memo1'), {css:{zIndex:325}}) // set is basically a 0-second duration tween
