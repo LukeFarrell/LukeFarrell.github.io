@@ -1,7 +1,7 @@
 /* Fonts and Typography */
 body {
     overflow-x: hidden;
-    font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', Arial;
 }
 
 p {
@@ -9,17 +9,17 @@ p {
 }
 
 a {
-    color: #fed136;
-    font-family: 'Josefin+Sans';
+    color: #f09905;
+    font-family: 'Josefin Sans';
 }
 
 a:hover {
-    color: #fec503;
+    color: #f09905;
 }
 }
 
 .text-primary {
-    color: #fed136 !important;
+    color: #f09905 !important;
 }
 
 h1,
@@ -49,7 +49,7 @@ section h3.section-subheading {
     font-style: italic;
     margin-bottom: 15px;
     text-transform: none;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Droid Serif', 'Helvetica Neue', Arial;
 }
 
 @media (min-width: 768px) {
@@ -59,7 +59,7 @@ section h3.section-subheading {
 }
 
 .btn {
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', 'Helvetica Neue', Arial;
     font-weight: 700;
 }
 
@@ -69,8 +69,8 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-    background-color: #fed136;
-    border-color: #fed136;
+    background-color: #f09905;
+    border-color: #f09905;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
@@ -83,16 +83,6 @@ section h3.section-subheading {
     box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
-::-moz-selection {
-    background: #fed136;
-    text-shadow: none;
-}
-
-::selection {
-    background: #fed136;
-    text-shadow: none;
-}
-
 img::selection {
     background: transparent;
 }
@@ -101,7 +91,7 @@ img::-moz-selection {
     background: transparent;
 }
 
-/* Navigation and Layout */
+/* NAVIGATION */
 #mainNav {
     background-color: #212529;
     border-radius: 0px !important;
@@ -115,17 +105,16 @@ img::-moz-selection {
     text-transform: uppercase;
     color: white;
     border: 0;
-    background-color: #fed136;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f09905;
 }
 
 #mainNav .navbar-brand {
-    color: #fed136;
+    color: #f09905;
     font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: #fec503;
+    color: #f09905;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -134,11 +123,10 @@ img::-moz-selection {
     padding: 0.75em 0;
     letter-spacing: 1px;
     color: white;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #fed136;
+    color: #f09905;
 }
 
 @media (min-width: 992px) {
@@ -171,6 +159,7 @@ img::-moz-selection {
     }
 }
 
+/* HEADER */
 header.masthead {
     text-align: center;
     color: white;
@@ -189,20 +178,12 @@ header.masthead .intro-text {
     padding-bottom: 10px;
 }
 
-header.masthead .intro-text .intro-lead-in {
-    font-size: 22px;
-    font-style: italic;
-    line-height: 22px;
-    margin-bottom: 25px;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
 header.masthead .intro-text .intro-heading {
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
     margin-bottom: 10px;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Josefin Sans', Arial;
 }
 
 @media (min-width: 768px) {
@@ -210,21 +191,61 @@ header.masthead .intro-text .intro-heading {
         padding-top: 400px;
         padding-bottom: 100px;
     }
-    header.masthead .intro-text .intro-lead-in {
-        font-size: 40px;
-        font-style: italic;
-        line-height: 40px;
-        margin-bottom: 25px;
-        font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
     header.masthead .intro-text .intro-heading {
         font-size: 50px;
         font-weight: 700;
         line-height: 75px;
         margin-bottom: 50px;
-        font-family: 'Josefin Sans';
     }
 }
+
+/* ABOUT SECTION */
+
+
+/* ABOUT SECTION - Photos */
+#photos {
+    /* Prevent vertical gaps */
+    line-height: 0;
+    -webkit-column-count: 5;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    5;
+    -moz-column-gap:      0px;
+    column-count:         5;
+    column-gap:           0px;
+    padding-top: 50px;
+}
+
+#photos img {
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: sepia(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+}
+#photos img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+
+@media (max-width: 1500px) {
+    #photos {
+        -moz-column-count:    3;
+        -webkit-column-count: 3;
+        column-count:         3;
+    }
+}
+@media (max-width: 400px) {
+    #photos {
+        -moz-column-count:    3;
+        -webkit-column-count: 3;
+        column-count:         3;
+    }
+}
+
+/* PLATFORM */
 .platform-title{
     font-family: 'Josefin Sans';
     font-size: 20px;
@@ -232,7 +253,7 @@ header.masthead .intro-text .intro-heading {
 
 .platform-title::first-letter{
     font-size: 300%;
-    color:  #fec503;
+    color:  #f09905;
 }
 
 .catch-phrase{
@@ -245,7 +266,7 @@ header.masthead .intro-text .intro-heading {
 .project-title{
     font-family: 'Josefin Sans';
     font-size: 40px;
-    color: #fec503;
+    color: #f09905;
     font-weight: bold;
 }
 
@@ -255,7 +276,7 @@ header.masthead .intro-text .intro-heading {
     font-family: 'Josefin Sans';
 }
 
-/* Portfolio */
+/* PORTFOLIO */
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 0px;
@@ -331,7 +352,7 @@ filter: sepia(100%) !important;
     font-size: 16px;
     font-style: italic;
     margin: 0;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', Arial;
 }
 
 #portfolio * {
@@ -386,7 +407,7 @@ filter: sepia(100%) !important;
     font-size: 16px;
     font-style: italic;
     margin: 20px 0 30px;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', Arial;
 }
 
 .portfolio-modal .modal-content ul.list-inline {
@@ -450,7 +471,7 @@ filter: sepia(100%) !important;
 .team-member img {
     width: 100%;
     height: 100%;
-    border: 7px solid #fed136;
+    border: 7px solid #f09905;
 }
 
 .team-member h4 {
@@ -465,7 +486,7 @@ filter: sepia(100%) !important;
 
 /* Contact Us */
 section#contact {
-    background-color: #fed136;
+    background-color: #f09905;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -492,7 +513,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-    border-color: #fed136;
+    border-color: #f09905;
     box-shadow: none;
 }
 
@@ -563,50 +584,7 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-    background-color: #fed136;
-}
-
-/* Photo collage in About section */
-#photos {
-    /* Prevent vertical gaps */
-    line-height: 0;
-    -webkit-column-count: 5;
-    -webkit-column-gap:   0px;
-    -moz-column-count:    5;
-    -moz-column-gap:      0px;
-    column-count:         5;
-    column-gap:           0px;
-    padding-top: 50px;
-}
-
-#photos img {
-    /* Just in case there are inline attributes */
-    width: 100% !important;
-    height: auto !important;
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
-    filter: gray; /* IE6-9 */
-    -webkit-filter: sepia(100%); /* Chrome 19+ & Safari 6+ */
-}
-
-}
-#photos img:hover {
-    filter: none;
-    -webkit-filter: grayscale(0%);
-}
-
-@media (max-width: 1500px) {
-    #photos {
-        -moz-column-count:    3;
-        -webkit-column-count: 3;
-        column-count:         3;
-    }
-}
-@media (max-width: 400px) {
-    #photos {
-        -moz-column-count:    3;
-        -webkit-column-count: 3;
-        column-count:         3;
-    }
+    background-color: #f09905;
 }
 
 /* Magicscroll CSS */
@@ -636,7 +614,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     color: #505050 !important;
 }
 h6 {
-    background: #fec503;
+    background: #f09905;
     display:inline !important;
     font-size: 25px !important;
     line-height: 200%;
@@ -651,7 +629,7 @@ h6 {
 }
 
 .verticalLine {
-    border-left: solid #fec503;
+    border-left: solid #f09905;
     border-width: 5px;
 }
 
