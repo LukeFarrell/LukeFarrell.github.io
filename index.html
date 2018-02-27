@@ -382,52 +382,29 @@
 
     <!-- IN THE NEWS -->
 </div>
-
 			<section id="News">
 				<div class="w3-container">
 				  <h2 class="section-heading text-uppercase">In the News!</h2>
 				</div>
-
-				<div class="MagicScroll" data-options="mode: carousel; height: 275px; step:0; speed: 9000;" style="background-color: white">
-				  <img class="mySlides" src="img/news1.jpg" href='http://www.dukechronicle.com/article/2017/11/171108-qian-kville-market';">
-				  <img class="mySlides" src="img/news2.jpg" style="width:100%" href='http://www.dukechronicle.com/article/2017/11/lunch-for-a-lincoln-5-lunch-option-now-available-at-every-vendor-on-campus';">
-				  <img class="mySlides" src="img/news3.jpg" style="width:100%" href='http://www.dukechronicle.com/article/2016/09/duke-student-government-welcomes-new-senators-emphasizes-groups-diversity';">
-				  <img class="mySlides" src="img/news4.jpg" style="width:100%" href='http://www.dukechronicle.com/article/2016/04/in-opposition-to-the-womens-center-move';">
-				  <img class="mySlides" src="img/news5.jpg" style="width:100%" href='http://www.dukechronicle.com/article/2017/10/students-can-now-tip-commons-wait-staff-during-flunchs';">
+				<div class="MagicScroll" data-options="mode: carousel; height: 275px; step:0; speed: 6000;" style="background-color: white">
+				<a href="http://www.dukechronicle.com/article/2017/11/171108-qian-kville-market" target="_blank">
+				  <img class="mySlides" src="img/news1.jpg">
+				  </a>
+				  <a href="http://www.dukechronicle.com/article/2017/11/lunch-for-a-lincoln-5-lunch-option-now-available-at-every-vendor-on-campus" target="_blank">
+				  <img class="mySlides" src="img/news2.jpg" style="width:100%">
+				  </a>
+				  <a href='http://www.dukechronicle.com/article/2016/09/duke-student-government-welcomes-new-senators-emphasizes-groups-diversity'>
+				  <img class="mySlides" src="img/news3.jpg" style="width:100%">
+				  </a>
+				  <a href = href='http://www.dukechronicle.com/article/2016/04/in-opposition-to-the-womens-center-move'>
+				  <img class="mySlides" src="img/news4.jpg" style="width:100%">
+				  </a>
+				  <a href='http://www.dukechronicle.com/article/2017/10/students-can-now-tip-commons-wait-staff-during-flunchs'>
+				  <img class="mySlides" src="img/news5.jpg" style="width:100%">
+				  </a>
 				  </div>
 				</div>
-
-				<script>
-				var slideIndex = 1;
-				showDivs(slideIndex);
-
-				function plusDivs(n) {
-				  showDivs(slideIndex += n);
-				}
-
-				function currentDiv(n) {
-				  showDivs(slideIndex = n);
-				}
-
-				function showDivs(n) {
-				  var i;
-				  var x = document.getElementsByClassName("mySlides");
-				  var dots = document.getElementsByClassName("demo");
-				  if (n > x.length) {slideIndex = 1}    
-				  if (n < 1) {slideIndex = x.length}
-				  for (i = 0; i < x.length; i++) {
-				     x[i].style.display = "none";  
-				  }
-				  for (i = 0; i < dots.length; i++) {
-				     dots[i].className = dots[i].className.replace(" w3-white", "");
-				  }
-				  x[slideIndex-1].style.display = "block";  
-				  dots[slideIndex-1].className += " w3-white";
-				}
-				</script>
 			</section>
-
-
 
     <!-- Footer -->
 	    <footer>
