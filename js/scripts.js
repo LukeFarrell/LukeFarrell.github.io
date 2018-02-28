@@ -64,7 +64,8 @@ $(document).ready(function(){
         asNavFor: '.press-display',
         dots: true,
         centerMode: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        variableWidth: true
     });
 });
 

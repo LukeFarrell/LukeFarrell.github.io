@@ -286,7 +286,7 @@ header.masthead .intro-text .intro-heading {
 
 .memo {
     margin-top: 10px;
-    box-shadow: 5px 5px 10px 5px rgba(0,0,0,.3);
+    box-shadow: 3px 3px 10px 2px rgba(0,0,0,.3);
 }
 
 .memo-wrapper {
@@ -610,11 +610,13 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 /* PRESS Section */
 /* PRESS - Carousel */
 .press-item {
-    max-width: 95%;
+    max-height: 200px;
+    margin: 20px 10px 5px 10px;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,.3);
 }
 
-.press-focus {
-    /* max-width: 100%; */
+.press-display {
+    box-shadow: 3px 3px 10px 2px rgba(0,0,0,.3);
 }
 
 /* SLICK css */
@@ -622,7 +624,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 /* Slider */
 .slick-loading .slick-list
 {
-    background: #fff url('./ajax-loader.gif') center center no-repeat;
+    background: #fff url('../plugins/slick/ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
@@ -632,8 +634,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     font-weight: normal;
     font-style: normal;
 
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+    src: url('../plugins/slick/fonts/slick.eot');
+    src: url('../plugins/slick/fonts/slick.eot?#iefix') format('embedded-opentype'), url('../plugins/slick/fonts/slick.woff') format('woff'), url('../plugins/slick/fonts/slick.ttf') format('truetype'), url('../plugins/slick/fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
 .slick-prev,
@@ -691,7 +693,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: #f09905;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -812,7 +814,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     text-align: center;
 
     opacity: .25;
-    color: black;
+    color: #f09905;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -820,5 +822,5 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
+    color: #f09905;
 }
