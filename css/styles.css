@@ -290,12 +290,20 @@ header.masthead .intro-text .intro-heading {
     font-family: 'League Spartan', Arial;
 }
 
-.memo-section{
+.memo {
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,.3);
+}
+
+.memo-wrapper {
+    text-align: center;
     margin-top: 10px;
 }
 
-.memo {
-    box-shadow: 5px 5px 10px 5px rgba(0,0,0,.3);
+@media (max-width: 768px) {
+    .memo {
+        max-width: 300px;
+    }
 }
 
 /* PORTFOLIO */
