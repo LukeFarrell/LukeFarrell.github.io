@@ -615,7 +615,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 /* PRESS - Carousel */
 .press-item {
     max-height: 200px;
-    margin: 20px 10px 5px 10px;
+    margin: 40px 10px 5px 10px;
     box-shadow: 2px 2px 5px 1px rgba(0,0,0,.3);
 }
 
