@@ -210,6 +210,11 @@ header.masthead .intro-text .intro-heading {
     box-shadow: 5px 5px 20px 5px rgba(0,0,0,.3);
 }
 
+#signature {
+    max-width: 40%;
+    margin-bottom: 10px;
+}
+
 /* ABOUT SECTION - Photos */
 #photos {
     /* Prevent vertical gaps */
@@ -267,7 +272,7 @@ header.masthead .intro-text .intro-heading {
 .catch-phrase{
     font-family: 'League Spartan', Arial;
     font-size: 15px;
-    padding: 10px;
+    margin: 30px;
     font-style: italic;
 }
 
@@ -291,7 +296,6 @@ header.masthead .intro-text .intro-heading {
 
 .memo-wrapper {
     text-align: center;
-    margin-top: 10px;
 }
 
 @media (max-width: 768px) {
