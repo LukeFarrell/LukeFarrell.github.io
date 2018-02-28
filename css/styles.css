@@ -10,7 +10,7 @@ p {
 
 a {
     color: #f09905;
-    font-family: 'GlacialIndifferenceRegular';
+    font-family: 'GlacialIndifferenceRegular', Arial;
 }
 
 a:hover {
@@ -29,13 +29,17 @@ h4,
 h5,
 {
     font-weight: 700;
-    font-family: 'League Spartan';
+    font-family: 'League Spartan', Arial;
     padding-bottom: 10px;
 }
 
 /* LAYOUT */
 section {
     padding: 50px 0;
+}
+
+.bg-gray{
+    background-color: #F4F7F7;
 }
 
 section h2.section-heading {
@@ -50,7 +54,6 @@ section h3.section-subheading {
     font-style: italic;
     margin-bottom: 15px;
     text-transform: none;
-    font-family: 'Droid Serif', 'Helvetica Neue', Arial;
 }
 
 @media (min-width: 768px) {
@@ -60,7 +63,7 @@ section h3.section-subheading {
 }
 
 .btn {
-    font-family: 'GlacialIndifferenceRegular', 'Helvetica Neue', Arial;
+    font-family: 'GlacialIndifferenceRegular', Arial;
     font-weight: 700;
 }
 
@@ -111,7 +114,7 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
     color: #f09905;
-    font-family: 'League Spartan', 'Helvetica Neue', Helvetica, Arial, cursive;
+    font-family: 'League Spartan', Arial;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -201,7 +204,6 @@ header.masthead .intro-text .intro-heading {
 }
 
 /* ABOUT SECTION */
-
 /* ABOUT SECTION - Letter */
 .letter {
     padding: 30px 30px 30px 30px;
@@ -252,8 +254,14 @@ header.masthead .intro-text .intro-heading {
 }
 
 /* PLATFORM */
+.platform-header{
+    font-family: 'League Spartan', Arial;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .platform-title{
-    font-family: 'League Spartan';
+    font-family: 'League Spartan', Arial;
     font-size: 20px;
 }
 
@@ -263,14 +271,14 @@ header.masthead .intro-text .intro-heading {
 }
 
 .catch-phrase{
-    font-family: 'League Spartan';
+    font-family: 'League Spartan', Arial;
     font-size: 15px;
-    margin-top: 50px;
+    padding: 10px;
     font-style: italic;
 }
 
 .project-title{
-    font-family: 'League Spartan';
+    font-family: 'League Spartan', Arial;
     font-size: 40px;
     color: #f09905;
     font-weight: bold;
@@ -279,7 +287,15 @@ header.masthead .intro-text .intro-heading {
 .service-heading {
     margin: 15px 0;
     text-transform: none;
-    font-family: 'League Spartan';
+    font-family: 'League Spartan', Arial;
+}
+
+.memo-section{
+    margin-top: 10px;
+}
+
+.memo {
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,.3);
 }
 
 /* PORTFOLIO */
@@ -300,10 +316,6 @@ header.masthead .intro-text .intro-heading {
     max-width: 100%;
     max-height: 100%;
 }
-
-/*.img-port:hover img{
-filter: sepia(100%) !important;
-}*/
 
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -526,27 +538,27 @@ section#contact .form-control:focus {
 section#contact ::-webkit-input-placeholder {
     font-weight: 700;
     color: #ced4da;
-    font-family: 'GlacialIndifferenceRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'GlacialIndifferenceRegular', Arial;
 }
 
 section#contact :-moz-placeholder {
     font-weight: 700;
     color: #ced4da;
     /* Firefox 18- */
-    font-family: 'GlacialIndifferenceRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'GlacialIndifferenceRegular', Arial;
 }
 
 section#contact ::-moz-placeholder {
     font-weight: 700;
     color: #ced4da;
     /* Firefox 19+ */
-    font-family: 'GlacialIndifferenceRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'GlacialIndifferenceRegular', Arial;
 }
 
 section#contact :-ms-input-placeholder {
     font-weight: 700;
     color: #ced4da;
-    font-family: 'GlacialIndifferenceRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'GlacialIndifferenceRegular', Arial;
 }
 
 /* Footer and Social */
@@ -559,7 +571,7 @@ footer span.copyright {
     font-size: 90%;
     line-height: 40px;
     text-transform: none;
-    font-family: 'GlacialIndifferenceRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'GlacialIndifferenceRegular', Arial;
 }
 
 footer ul.quicklinks {
@@ -693,9 +705,4 @@ h6 {
 {
     border-width: 1px;
     border-color: Black;
-}
-
-.img-fluid{
-    padding:1px;
-    border:1px solid #021a40;
 }
