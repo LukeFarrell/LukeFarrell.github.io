@@ -1,3 +1,11 @@
+html,body
+{
+    /* width: 100%; */
+    /* height: 100%;
+    margin: 0px;
+    padding: 0px; */
+}
+
 /* TYPOGRAPHY */
 body {
     overflow-x: hidden;
@@ -230,7 +238,7 @@ header.masthead .intro-text .intro-heading {
 
 #photos img {
     /* Just in case there are inline attributes */
-    width: 100% !important;
+    /* width: 100% !important; */
     height: auto !important;
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
     filter: gray; /* IE6-9 */
@@ -326,7 +334,7 @@ header.masthead .intro-text .intro-heading {
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
     position: absolute;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     -webkit-transition: all ease 0.5s;
     -moz-transition: all ease 0.5s;
@@ -343,7 +351,7 @@ header.masthead .intro-text .intro-heading {
     font-size: 20px;
     position: absolute;
     top: 50%;
-    width: 100%;
+    /* width: 100%; */
     height: 20px;
     margin-top: -12px;
     text-align: center;
@@ -392,7 +400,7 @@ header.masthead .intro-text .intro-heading {
 .portfolio-modal {
     text-align: center;
     padding: 0!important;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
 }
 
@@ -493,7 +501,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .team-member img {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     border: 7px solid #f09905;
 }
@@ -613,14 +621,28 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 /* PRESS Section */
 /* PRESS - Carousel */
-.press-item {
-    max-height: 200px;
-    margin: 40px 10px 5px 10px;
-    box-shadow: 2px 2px 5px 1px rgba(0,0,0,.3);
+.press-wrapper{
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 5px;
 }
 
 .press-display {
     box-shadow: 3px 3px 8px 2px rgba(0,0,0,.3);
+    overflow-x: hidden;
+}
+
+.press-item {
+    max-height: 200px;
+    overflow-x: hidden;
+    margin: 0px 10px;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,.3);
+}
+
+@media(max-width: 600px){
+    .press-item {
+        max-width: 100px;
+    }
 }
 
 /* SLICK css */
@@ -752,7 +774,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
     display: block;
 
-    width: 100%;
+    /* width: 100%; */
     padding: 0;
     margin: 0;
 
