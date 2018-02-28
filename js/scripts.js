@@ -59,7 +59,6 @@ $(document).ready(function(){
         asNavFor: '.press-nav'
     });
     $('.press-nav').slick({
-        arrows: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.press-display',
@@ -71,7 +70,7 @@ $(document).ready(function(){
               breakpoint: 600,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 1
+                slidesToScroll: 2
               }
             },
             {
@@ -90,6 +89,13 @@ AOS.init({
   duration: 1500,
 })
 
-$( "img" ).on( "mouseover", function() {
-      $( this ).css( "filter", "none" );
-});
+var allImages = [];
+numPhotos = 16;
+for (i = 1; i < numPhotos; i++) {
+    allImages.splice(Math.floor(Math.random() * allImages.length), 0, '<img src="./img/friends/' + i + '.jpg">');
+}
+for (i = 1; i < numPhotos; i++) {
+    allImages.splice(Math.floor(Math.random() * allImages.length), 0, '<img src="./img/friends/' + i + '.jpg">');
+}
+
+$('#photos').append(allImages);
