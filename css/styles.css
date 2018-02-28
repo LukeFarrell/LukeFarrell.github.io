@@ -505,7 +505,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .team-member img {
-    /* width: 100%; */
+    width: 100%;
     height: 100%;
     border: 7px solid #f09905;
 }
@@ -799,35 +799,13 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 /* Contact Us */
 section#contact {
-    background-color: #f09905;
+    background-color: #F4F7F7;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-section#contact .section-heading {
-    color: #fff;
-}
-
-section#contact .form-group {
-    margin-bottom: 25px;
-}
-
-section#contact .form-group input,
-section#contact .form-group textarea {
-    padding: 20px;
-}
-
-section#contact .form-group input.form-control {
-    height: auto;
-}
-
-section#contact .form-group textarea.form-control {
-    height: 248px;
-}
-
-section#contact .form-control:focus {
-    border-color: #f09905;
-    box-shadow: none;
+.tina-form {
+    margin-top: 20px;
 }
 
 section#contact ::-webkit-input-placeholder {

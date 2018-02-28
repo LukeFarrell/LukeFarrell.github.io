@@ -93,8 +93,6 @@ var allImages = [];
 numPhotos = 16;
 for (i = 1; i < numPhotos; i++) {
     allImages.splice(Math.floor(Math.random() * allImages.length), 0, '<img src="./img/friends/' + i + '.jpg">');
-}
-for (i = 1; i < numPhotos; i++) {
     allImages.splice(Math.floor(Math.random() * allImages.length), 0, '<img src="./img/friends/' + i + '.jpg">');
 }
 
