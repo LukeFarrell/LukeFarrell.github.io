@@ -1,7 +1,7 @@
-/* Fonts and Typography */
+/* TYPOGRAPHY */
 body {
     overflow-x: hidden;
-    font-family: 'Montserrat', Arial;
+    font-family: 'GlacialIndifferenceRegular', Arial;
 }
 
 p {
@@ -10,7 +10,7 @@ p {
 
 a {
     color: #f09905;
-    font-family: 'Josefin Sans';
+    font-family: 'GlacialIndifferenceRegular';
 }
 
 a:hover {
@@ -29,10 +29,11 @@ h4,
 h5,
 {
     font-weight: 700;
-    font-family: 'Josefin Sans';
+    font-family: 'League Spartan';
     padding-bottom: 10px;
 }
 
+/* LAYOUT */
 section {
     padding: 50px 0;
 }
@@ -59,7 +60,7 @@ section h3.section-subheading {
 }
 
 .btn {
-    font-family: 'Montserrat', 'Helvetica Neue', Arial;
+    font-family: 'GlacialIndifferenceRegular', 'Helvetica Neue', Arial;
     font-weight: 700;
 }
 
@@ -110,7 +111,7 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
     color: #f09905;
-    font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, cursive;
+    font-family: 'League Spartan', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -132,12 +133,12 @@ img::-moz-selection {
 @media (min-width: 992px) {
     #mainNav {
         padding-top: 5px;
-        padding-bottom: 5px;
+        padding-bottom: 0px;
         -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
         -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
         transition: padding-top 0.3s, padding-bottom 0.3s;
         border: none;
-        /*background-color: transparent;*/
+        background-color: rgba(33, 37, 41, 0.60);
     }
     #mainNav .navbar-brand {
         font-size: 1.75em;
@@ -155,7 +156,7 @@ img::-moz-selection {
     }
     #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
-        padding: 12px 0;
+        padding: 12px 0px 0px 0px;
     }
 }
 
@@ -183,7 +184,7 @@ header.masthead .intro-text .intro-heading {
     font-weight: 700;
     line-height: 50px;
     margin-bottom: 10px;
-    font-family: 'Josefin Sans', Arial;
+    font-family: 'League Spartan', Arial;
 }
 
 @media (min-width: 768px) {
@@ -252,7 +253,7 @@ header.masthead .intro-text .intro-heading {
 
 /* PLATFORM */
 .platform-title{
-    font-family: 'Josefin Sans';
+    font-family: 'League Spartan';
     font-size: 20px;
 }
 
@@ -262,14 +263,14 @@ header.masthead .intro-text .intro-heading {
 }
 
 .catch-phrase{
-    font-family: 'Josefin Sans';
+    font-family: 'League Spartan';
     font-size: 15px;
     margin-top: 50px;
     font-style: italic;
 }
 
 .project-title{
-    font-family: 'Josefin Sans';
+    font-family: 'League Spartan';
     font-size: 40px;
     color: #f09905;
     font-weight: bold;
@@ -278,7 +279,7 @@ header.masthead .intro-text .intro-heading {
 .service-heading {
     margin: 15px 0;
     text-transform: none;
-    font-family: 'Josefin Sans';
+    font-family: 'League Spartan';
 }
 
 /* PORTFOLIO */
@@ -357,7 +358,7 @@ filter: sepia(100%) !important;
     font-size: 16px;
     font-style: italic;
     margin: 0;
-    font-family: 'Montserrat', Arial;
+    font-family: 'GlacialIndifferenceRegular', Arial;
 }
 
 #portfolio * {
@@ -412,7 +413,7 @@ filter: sepia(100%) !important;
     font-size: 16px;
     font-style: italic;
     margin: 20px 0 30px;
-    font-family: 'Montserrat', Arial;
+    font-family: 'GlacialIndifferenceRegular', Arial;
 }
 
 .portfolio-modal .modal-content ul.list-inline {
@@ -525,27 +526,27 @@ section#contact .form-control:focus {
 section#contact ::-webkit-input-placeholder {
     font-weight: 700;
     color: #ced4da;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'GlacialIndifferenceRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 section#contact :-moz-placeholder {
     font-weight: 700;
     color: #ced4da;
     /* Firefox 18- */
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'GlacialIndifferenceRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 section#contact ::-moz-placeholder {
     font-weight: 700;
     color: #ced4da;
     /* Firefox 19+ */
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'GlacialIndifferenceRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 section#contact :-ms-input-placeholder {
     font-weight: 700;
     color: #ced4da;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'GlacialIndifferenceRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* Footer and Social */
@@ -558,7 +559,7 @@ footer span.copyright {
     font-size: 90%;
     line-height: 40px;
     text-transform: none;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'GlacialIndifferenceRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 footer ul.quicklinks {
@@ -566,7 +567,7 @@ footer ul.quicklinks {
     line-height: 40px;
     margin-bottom: 0;
     text-transform: none;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'GlacialIndifferenceRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 ul.social-buttons {
