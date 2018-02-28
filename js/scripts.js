@@ -49,6 +49,28 @@
 
 })(jQuery); // End of use strict
 
+// Slick.js carousel
+$(document).ready(function(){
+    $('.press-display').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.press-nav'
+    });
+    $('.press-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.press-display',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
+});
+
+
+
+// AOS Stuff
 AOS.init({
   duration: 1500,
 })

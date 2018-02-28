@@ -20,11 +20,11 @@
 	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
 	<link rel="stylesheet" media="screen" href="plugins/league-spartan-master/_webfonts/stylesheet.css" type="text/css"/>
 
-	<!-- MagicScroll CSS -->
-	<link type="text/css" rel="stylesheet" href="plugins/magicscroll/magicscroll.css" />
-
 	<!-- AOS CSS-->
 	<link href="plugins/aos/aos.css" rel="stylesheet">
+
+	<!-- Slick CSS -->
+	<link rel="stylesheet" href="plugins/slick/slick.css">
 
 	<!-- Custom styles for this Kristina's site-->
 	<link href="css/styles.css" rel="stylesheet">
@@ -96,8 +96,8 @@
 	<section id="platform" class="bg-gray">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 platform-header">
-					<h1>MY TO DO LIST.</h1>
+				<div class="col-md-12 section-header text-uppercase">
+					<h1>My to do list.</h1>
 				</div>
 			</div>
 			<div class="row">
@@ -155,8 +155,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h2 class="section-heading text-uppercase">What I've Done</h2>
-					<h3 class="section-subheading text-muted">These are the things I have fought to change and the organizations that have changed me. Click the tiles below to read more</h3>
+					<h1 class="section-header text-uppercase">What I've Done</h1>
+					<h3 class="section-subheader text-muted">These are the things I have fought to change and the organizations that have changed me. Click the tiles below to read more</h3>
 				</div>
 			</div>
 			<div class="row text-center">
@@ -342,58 +342,7 @@
 		</div>
 	</section>
 
-	<!-- IN THE NEWS -->
-	</div>
-	<section id="press" class="bg-gray">
-		
-	</section>
-	<!-- <section id="press" class="bg-light">
-		<div class="row">
-			<div class="col-md-12">
-				<h2 class="section-heading text-uppercase">In the News!</h2>
-				<div class="MagicScroll" data-options="mode: carousel; height: 275px; step:0; speed: 6000;" style="background-color: white">
-					<a href="http://www.dukechronicle.com/article/2017/11/171108-qian-kville-market" target="_blank">
-						  <img class="mySlides" src="img/news1.jpg">
-						  </a>
-					<a href="http://www.dukechronicle.com/article/2017/11/lunch-for-a-lincoln-5-lunch-option-now-available-at-every-vendor-on-campus" target="_blank">
-						  <img class="mySlides" src="img/news2.jpg" style="width:100%">
-						  </a>
-					<a href='http://www.dukechronicle.com/article/2016/09/duke-student-government-welcomes-new-senators-emphasizes-groups-diversity' target="_blank">
-						  <img class="mySlides" src="img/news3.jpg" style="width:100%">
-						  </a>
-					<a href=h ref='http://www.dukechronicle.com/article/2016/04/in-opposition-to-the-womens-center-move' target="_blank">
-						  <img class="mySlides" src="img/news4.jpg" style="width:100%">
-						  </a>
-					<a href='http://www.dukechronicle.com/article/2017/10/students-can-now-tip-commons-wait-staff-during-flunchs' target="_blank">
-						  <img class="mySlides" src="img/news5.jpg" style="width:100%">
-						  </a>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-	<!-- Footer -->
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<span class="copyright">Copyright &copy; Luke &amp; Jake 2018</span>
-				</div>
-				<div class="col-md-4">
-					<ul class="list-inline social-buttons">
-						<li class="list-inline-item">
-							<a href="https://www.facebook.com/KristinaForPresident/">
-	                  <i class="fa fa-facebook"></i>
-	                </a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
-
 	<!-- Portfolio Modals for Projects-->
-
 	<!-- Modal 1 -->
 	<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog">
@@ -881,6 +830,54 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- PRESS -->
+	<section id="press" class="bg-gray">
+		<div class="row">
+			<div class="col-10 offset-1">
+				<h1 class="section-header text-uppercase">In the news!</h1>
+				<div class="press-display">
+					<div><a href="http://www.dukechronicle.com/article/2017/11/171108-qian-kville-market" target="_blank"><img class="img-fluid press-focus" src="img/news1.jpg"></a></div>
+					<div><a href="http://www.dukechronicle.com/article/2017/11/lunch-for-a-lincoln-5-lunch-option-now-available-at-every-vendor-on-campus" target="_blank"><img class="img-fluid press-focus" src="img/news2.jpg"></a></div>
+					<div><a href='http://www.dukechronicle.com/article/2016/09/duke-student-government-welcomes-new-senators-emphasizes-groups-diversity' target="_blank"><img class="img-fluid press-focus" src="img/news3.jpg"></a></div>
+					<div><a href=h ref='http://www.dukechronicle.com/article/2016/04/in-opposition-to-the-womens-center-move' target="_blank"><img class="img-fluid press-focus" src="img/news4.jpg"></a></div>
+					<div><a href='http://www.dukechronicle.com/article/2017/10/students-can-now-tip-commons-wait-staff-during-flunchs' target="_blank"><img class="img-fluid press-focus" src="img/news5.jpg"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 offset-md-2">
+				<div class="press-nav">
+					<div><a href="http://www.dukechronicle.com/article/2017/11/171108-qian-kville-market" target="_blank"><img class="press-item" src="img/news1.jpg"></a></div>
+					<div><a href="http://www.dukechronicle.com/article/2017/11/lunch-for-a-lincoln-5-lunch-option-now-available-at-every-vendor-on-campus" target="_blank"><img class="press-item" src="img/news2.jpg"></a></div>
+					<div><a href='http://www.dukechronicle.com/article/2016/09/duke-student-government-welcomes-new-senators-emphasizes-groups-diversity' target="_blank"><img class="press-item" src="img/news3.jpg"></a></div>
+					<div><a href=h ref='http://www.dukechronicle.com/article/2016/04/in-opposition-to-the-womens-center-move' target="_blank"><img class="press-item" src="img/news4.jpg"></a></div>
+					<div><a href='http://www.dukechronicle.com/article/2017/10/students-can-now-tip-commons-wait-staff-during-flunchs' target="_blank"><img class="press-item" src="img/news5.jpg"></a></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<span class="copyright">Copyright &copy; Luke &amp; Jake 2018</span>
+				</div>
+				<div class="col-md-4">
+					<ul class="list-inline social-buttons">
+						<li class="list-inline-item">
+							<a href="https://www.facebook.com/KristinaForPresident/">
+	                  <i class="fa fa-facebook"></i>
+	                </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
 	<!-- Bootstrap core JavaScript -->
 	<script src="plugins/jquery/jquery.min.js"></script>
 	<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -891,8 +888,8 @@
 	<!-- AOS JS-->
 	<script src="plugins/aos/aos.js"></script>
 
-	<!-- MagicScroll JS -->
-	<script type="text/javascript" src="plugins/magicscroll/magicscroll.js"></script>
+	<!-- Slick JS -->
+	<script src="plugins/slick/slick.min.js" type="text/javascript"></script>
 
 	<!-- Custom scripts for Kristina's site -->
 	<script src="js/scripts.js"></script>

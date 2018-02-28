@@ -42,13 +42,13 @@ section {
     background-color: #F4F7F7;
 }
 
-section h2.section-heading {
-    font-size: 40px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+.section-header {
+    font-family: 'League Spartan', Arial;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-section h3.section-subheading {
+.section-subheader {
     font-size: 16px;
     font-weight: 400;
     font-style: italic;
@@ -254,12 +254,6 @@ header.masthead .intro-text .intro-heading {
 }
 
 /* PLATFORM */
-.platform-header{
-    font-family: 'League Spartan', Arial;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 .platform-title{
     font-family: 'League Spartan', Arial;
     font-size: 20px;
@@ -613,104 +607,218 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     background-color: #f09905;
 }
 
-/* Magicscroll CSS */
-.carousel{
-    background: #2f4357;
-    margin-top: 20px;
-
-}
-.carousel .item{
-    min-height: 280px;  /*Prevent carousel from being distorted if for some reason image doesn't load */
-    max-height: 300px;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%,0);
-    /*max-width: 200px;*/
-}
-.carousel .item img{
-    margin: 0 auto; /* Align slide image horizontally center */
-    align-items: center;
-}
-.bs-example{
-    margin: 20px;
+/* PRESS Section */
+/* PRESS - Carousel */
+.press-item {
+    max-width: 95%;
 }
 
-.carousel-caption{
-    font-style: italic;
-    color: #505050 !important;
-}
-h6 {
-    background: #f09905;
-    display:inline !important;
-    font-size: 25px !important;
-    line-height: 200%;
-    align-content: center !important;
-}
-/**
-* For IE 6/7 only
-* Include this rule to trigger hasLayout and contain floats.
-*/
-.cf {
-    *zoom: 1;
+.press-focus {
+    /* max-width: 100%; */
 }
 
-.verticalLine {
-    border-left: solid #f09905;
-    border-width: 5px;
-}
-
-.col-right {
-    padding-right: 15px !important;
-    margin-left: -15px !important;
-}
-
-.col-left {
-    padding-left: 15px !important;
-    margin-right: -15px !important;
-}
-
-.MagicScroll[data-mode="cover-flow"] {
-    background-color: white;
-}
-
-.read-more-state {
-    display: none;
-}
-
-.read-more-target {
-    opacity: 0;
-    max-height: 0;
-    font-size: 0;
-    transition: .25s ease;
-}
-
-.read-more-state:checked ~ .read-more-wrap .read-more-target {
-    opacity: 1;
-    font-size: inherit;
-    max-height: 999em;
-}
-
-.read-more-state ~ .read-more-trigger:before {
-    content: 'Read more of the letter...';
-}
-
-.read-more-state:checked ~ .read-more-trigger:before {
-    content: 'Show less';
-}
-
-.read-more-trigger {
-    cursor: pointer;
-    display: inline-block;
-    padding: 0 .5em;
-    color: #666;
-    font-size: .9em;
-    line-height: 2;
-    border: 1px solid #ddd;
-    border-radius: .25em;
-}
-
-.ImageBorder
+/* SLICK css */
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
 {
-    border-width: 1px;
-    border-color: Black;
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
 }
