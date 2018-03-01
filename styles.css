@@ -110,6 +110,10 @@ img::-moz-selection {
     font-size: 15.5px !important;
 }
 
+.navbar a:hover{
+    text-decoration: none !important;
+}
+
 #mainNav .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -297,6 +301,7 @@ header.masthead .intro-text .intro-heading {
     font-size: 15px;
     margin: 30px;
     font-style: italic;
+    overflow-x: hidden;
 }
 
 .project-title{
