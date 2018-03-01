@@ -1,8 +1,9 @@
 /* TYPOGRAPHY */
 @font-face {
     font-family: 'League Spartan';
-    /* src: url('../leaguespartan-bold.ttf'); */
-    src: url('leaguespartan-bold.ttf');
+
+    /* src: url('../css/leaguespartan-bold.ttf'); */
+    src: url('css/leaguespartan-bold.ttf');
     font-weight: bold;
     font-style: normal;
 }
@@ -175,7 +176,7 @@ img::-moz-selection {
 header.masthead {
     text-align: center;
     color: white;
-    background-image: url("img/option7.jpg");
+    background-image: url("../img/option7.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
