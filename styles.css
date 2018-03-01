@@ -765,6 +765,10 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 /* Team Members */
+#team .section-header {
+    margin-top: 20px;
+}
+
 .team-member {
     margin-bottom: 0px;
     text-align: center;
