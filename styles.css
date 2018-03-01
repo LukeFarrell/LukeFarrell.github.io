@@ -2,8 +2,7 @@
 @font-face {
     font-family: 'League Spartan';
 
-    /* src: url('../css/leaguespartan-bold.ttf'); */
-    src: url('css/leaguespartan-bold.ttf');
+    src: url('../leaguespartan-bold.ttf');
     font-weight: bold;
     font-style: normal;
 }
