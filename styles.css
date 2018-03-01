@@ -22,8 +22,8 @@ a {
 }
 
 a:hover {
-    color: #f09905;
-}
+    color: #f09905 !important;
+    text-decoration: underline !important;
 }
 
 .text-primary {
@@ -53,7 +53,7 @@ section {
 .section-header {
     font-family: 'League Spartan', Arial;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .section-subheader {
@@ -175,7 +175,6 @@ img::-moz-selection {
 header.masthead {
     text-align: center;
     color: white;
-    /* background-image: url("../img/tina-bg.jpg"); */
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -327,6 +326,12 @@ header.masthead .intro-text .intro-heading {
         max-width: 200px;
     }
 }
+
+#platform li {
+    color: black;
+}
+
+/* PLATFORM Modals */
 
 /* EXPERIENCES */
 /* EXPERIENCE - Filters */
