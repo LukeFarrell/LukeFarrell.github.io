@@ -358,7 +358,14 @@ header.masthead .intro-text .intro-heading {
 	overflow: hidden;
 }
 .isotope-item {
-    margin: 5px;
+    padding: 5px;
+    max-width: 25%;
+}
+
+@media (max-width: 768px){
+    .isotope-item {
+        max-width: 50%;
+    }
 }
 
 .isotope-item img {

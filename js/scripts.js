@@ -110,6 +110,7 @@ $('.isotope-container').fadeIn();
 var $container = $('.isotope-container').isotope({
     itemSelector: '.isotope-item',
     layoutMode: 'fitRows',
+    percentPosition: true,
     transitionDuration: '0.6s',
     filter: "*"
 });
