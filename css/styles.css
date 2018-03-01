@@ -231,7 +231,7 @@ header.masthead .intro-text .intro-heading {
 
 @media(max-width: 768px){
     .parallax-window{
-        min-height: 200px;
+        display: none;
     }
 }
 
@@ -312,7 +312,7 @@ header.masthead .intro-text .intro-heading {
 
 @media (max-width: 768px) {
     .memo {
-        max-width: 300px;
+        max-width: 200px;
     }
 }
 
@@ -378,10 +378,11 @@ header.masthead .intro-text .intro-heading {
 .isotope-item .btn-default:hover {
 	color: #ffffff;
 }
-@media (max-width:480px) {
+@media (max-width:600px) {
 	.filters .nav-pills > li {
 		width: 100%;
 		display: block;
+        margin-bottom: 10px;
 	}
 }
 
