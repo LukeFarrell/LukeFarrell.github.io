@@ -1,8 +1,7 @@
 /* TYPOGRAPHY */
 @font-face {
     font-family: 'League Spartan';
-
-    src: url('../leaguespartan-bold.ttf');
+    /* src: url('../leaguespartan-bold.ttf'); */
     src: url('leaguespartan-bold.ttf');
     font-weight: bold;
     font-style: normal;
