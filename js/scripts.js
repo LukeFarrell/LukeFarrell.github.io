@@ -91,16 +91,15 @@ AOS.init({
 
 // Image Collage Stuff
 var allImages = [];
-numPhotos = 16;
+numPhotos = 25;
 
 for (i = 1; i < numPhotos; i++) {
-    allImages.splice(Math.floor(Math.random() * allImages.length), 0, '<img src="./img/friends/' + i + '.jpg">');
     allImages.splice(Math.floor(Math.random() * allImages.length), 0, '<img src="./img/friends/' + i + '.jpg">');
 }
 $('#photos1').append(allImages);
 
+allImages = [];
 for (i = 1; i < numPhotos; i++) {
-    allImages.splice(Math.floor(Math.random() * allImages.length), 0, '<img src="./img/friends/' + i + '.jpg">');
     allImages.splice(Math.floor(Math.random() * allImages.length), 0, '<img src="./img/friends/' + i + '.jpg">');
 }
 $('#photos2').append(allImages);
