@@ -123,50 +123,50 @@ $('.filters').on( 'click', 'ul.nav li a', function() {
 });
 
 //Video popup
-$(document).ready(function() {
-    var magnifVideo = function() {
-        $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-            type: 'iframe',
-            mainClass: 'mfp-fade',
-            removalDelay: 160,
-            preloader: false,
-            fixedContentPos: false,
-            closeOnBgClick: true,
-            enableEscapeKey: true,
-            items: {
-                src: "https://www.youtube.com/watch?v=Ick-tFQuqUU"
-            },
-            disableOn: 700,
-        });
-    };
-
-    var magnifAutoplayer = function() {
-        if (Cookies.get('kristina4dsg') !== "visited"){
-            $.magnificPopup.open({
-                type: 'iframe',
-                mainClass: 'mfp-fade',
-                removalDelay: 160,
-                preloader: false,
-                fixedContentPos: false,
-                closeOnBgClick: true,
-                enableEscapeKey: true,
-                items: {
-                    src: "https://www.youtube.com/watch?v=Ick-tFQuqUU"
-                },
-                disableOn: 700,
-                callbacks: {
-                    open: function() {
-                        Cookies.set('kristina4dsg', 'visited', { expires: 21 })
-                        document.body.style.overflow = "hidden";
-                    },
-                    close: function() {
-                        document.body.style.overflow = "visible";
-                    }
-                }
-            }, 0);
-        }
-    };
-
-    magnifVideo();
-    magnifAutoplayer();
-});
+// $(document).ready(function() {
+//     var magnifVideo = function() {
+//         $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+//             type: 'iframe',
+//             mainClass: 'mfp-fade',
+//             removalDelay: 160,
+//             preloader: false,
+//             fixedContentPos: false,
+//             closeOnBgClick: true,
+//             enableEscapeKey: true,
+//             items: {
+//                 src: "https://www.youtube.com/watch?v=Ick-tFQuqUU"
+//             },
+//             disableOn: 700,
+//         });
+//     };
+//
+//     var magnifAutoplayer = function() {
+//         if (Cookies.get('kristina4dsg') !== "visited"){
+//             $.magnificPopup.open({
+//                 type: 'iframe',
+//                 mainClass: 'mfp-fade',
+//                 removalDelay: 160,
+//                 preloader: false,
+//                 fixedContentPos: false,
+//                 closeOnBgClick: true,
+//                 enableEscapeKey: true,
+//                 items: {
+//                     src: "https://www.youtube.com/watch?v=Ick-tFQuqUU"
+//                 },
+//                 disableOn: 700,
+//                 callbacks: {
+//                     open: function() {
+//                         Cookies.set('kristina4dsg', 'visited', { expires: 21 })
+//                         document.body.style.overflow = "hidden";
+//                     },
+//                     close: function() {
+//                         document.body.style.overflow = "visible";
+//                     }
+//                 }
+//             }, 0);
+//         }
+//     };
+//
+//     magnifVideo();
+//     magnifAutoplayer();
+// });
